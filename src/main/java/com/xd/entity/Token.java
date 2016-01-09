@@ -1,11 +1,15 @@
 package com.xd.entity;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * Created by XD on 2016/1/9.
  * 手机端登陆认证
  */
+@Entity
+@Table
 public class Token extends BasicEntity{
     @Column
     private long user_id;
